@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    color: orange;
+    /* p element inherits orange color */
+
+}
+
+h1 {
+    color: red;
+    color: blue;
+    color: green;
+    background-color: black;
+}
+
+.item-title{
+    font-size: 15px;
+    color: orange;
+    /* selector has a priority  */
+}
+h1 {
+    /* color: cornflowerblue !important; */
+    /* ! important comand is always aways 
+    ignore order and specificity*/
+    /* cascasing it will not delete the background color previous h1*/
+}
+#item-price{
+    color:green;
+    font-size: 25px;
+}
+.item-photo {
+    width:200px;
+    height: 200px;
+}
+
+.photo.frame{
+    width: 250px;
+    height: 250px;
+}
+/* > sign shows any image that si directly indise that */
+.photo-frame img {
+    height: 100%;
+}
+.photo-border {
+    outline: 2px solid green;
+}
+
+
